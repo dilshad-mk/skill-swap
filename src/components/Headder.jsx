@@ -27,15 +27,15 @@ function Headder() {
                     <div className='rating_para'>p4.9/5 from 12,000+ reviews</div>
                 </div>
                 <div className='rating_acc_profile_pic'>
-                  <img className='rounded-circle' src="src\assets\feedbackimg1.jpg" alt="" />
-                  <img className='rounded-circle' src="src\assets\feedbackimg2.jpg" alt="" />
-                  <img className='rounded-circle' src="src\assets\feedbackimg3.jpg" alt="" />
-                  <img className='rounded-circle' src="src\assets\feedbackimg4.jpg" alt="" />
+                  <img className='rounded-circle' src="images\feedbackimg1.jpg" alt="" />
+                  <img className='rounded-circle' src="images\feedbackimg2.jpg" alt="" />
+                  <img className='rounded-circle' src="images\feedbackimg3.jpg" alt="" />
+                  <img className='rounded-circle' src="images\feedbackimg4.jpg" alt="" />
                 </div>
             </div>
         </div>
         <div className='right-header'>
-            <img src="src\assets\rightheader_banner.jpg" alt="" />
+            <img src="images\rightheader_banner.jpg" alt="" />
                  <div className="banner_bg"></div>
             <div className='div_50k'>
                 <div><i class="bi bi-people"></i></div>

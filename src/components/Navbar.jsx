@@ -7,7 +7,7 @@ function Navbar() {
 
       {/* Logo (always visible) */}
       <div className="logo_part">
-        <img src="src/assets/skill-swap-logo.png" alt="Skill Swap" />
+        <img src="images/skill-swap-logo.png" alt="Skill Swap" />
       </div>
 
       {/* Hamburger */}
