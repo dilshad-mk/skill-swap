@@ -3,7 +3,7 @@
   width: 100%;
   border-top: 1px solid rgba(185, 181, 181, 0.345);
   border-bottom: 1px solid rgba(185, 181, 181, 0.345);
-      backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
 /* Logo */
@@ -46,17 +46,19 @@
 .login {
   border: 1px solid #8A2BE2;
   color: #8A2BE2;
-  &:hover{
+
+  &:hover {
     background: linear-gradient(135deg, #5F2EEA, #8A2BE2);
-  color: white;
+    color: white;
   }
 }
 
 .cta {
   background: linear-gradient(135deg, #5F2EEA, #8A2BE2);
   color: white;
-  &:hover{
-     background: linear-gradient(135deg, #684bb2, #8a3dd8);
+
+  &:hover {
+    background: linear-gradient(135deg, #684bb2, #8a3dd8);
   }
 }
 
@@ -70,8 +72,8 @@
     padding-top: 15px;
     gap: 15px;
   }
-  .custom-navbar{
-  padding: 10px 10px;
+
+  .custom-navbar {
+    padding: 10px 10px;
   }
 }
-

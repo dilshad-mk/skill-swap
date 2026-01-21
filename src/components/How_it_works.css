@@ -1,0 +1,103 @@
+.wrapper{
+    padding: 100px 50px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.text_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text_part p:nth-child(1){
+    font-size: 12px;
+    background-color: #f2f6fa;
+    padding: 1px 5px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+.text_part p:nth-child(3){
+    font-size: 16px;
+    /* letter-spacing: 1px; */
+    font-weight: 600;
+    color: rgba(16, 16, 16, 0.747);
+    line-height: 40px;
+}
+.text_part h1{
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+.card_part_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+    /* background-color: aqua; */
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.cards{
+   cursor: pointer;
+    border: 1px solid rgba(188, 188, 188, 0.302);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+   align-content: center;
+    padding: 20px 20px;
+    gap: 10px;
+    position: relative;
+    transition: .14s ease;
+
+}
+.cards:hover .bi{
+    scale: 1.07;
+        transition: .14s ease;
+}
+.cards:hover{
+    box-shadow: 1px 1px 10px rgba(187, 187, 187, 0.82);
+}
+.bi-people,.bi-check-circle {
+    background-color: #e0e7ff;
+    color: #4e38f5;
+    padding: 5px 15px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.bi-book{
+    padding: 5px 15px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color:#f3e8ff;
+    color: #9810fa;
+}
+.bi-calendar{
+    padding: 5px 15px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: #00968a;
+    background-color: #c5e6e3; 
+}
+.cards p{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+}
+.circle{
+background: linear-gradient(135deg, #5F2EEA, #8A2BE2);
+position: absolute;
+top: -10px;
+left: -10px;
+padding: 5px 5px;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
