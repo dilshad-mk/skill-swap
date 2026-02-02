@@ -8,24 +8,28 @@ function Skills_mentors({userData}) {
   /* 🔹 ADD */
   const sectionRef = useRef(null)
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0]
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate')
-          observer.unobserve(entry.target)
-        }
-      },
-      { threshold: 0.5 }
-    )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const entry = entries[0]
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate')
+        observer.unobserve(entry.target)
+      }
+    },
+    {
+      threshold: 0.15,
+      rootMargin: "0px 0px -50px 0px"
     }
+  )
 
-    return () => observer.disconnect()
-  }, [])
+  if (sectionRef.current) {
+    observer.observe(sectionRef.current)
+  }
+
+  return () => observer.disconnect()
+}, [])
+
 
  
 
