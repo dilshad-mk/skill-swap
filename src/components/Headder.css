@@ -284,3 +284,37 @@ h1 span {
         display: inline-block;
     }
 }
+
+/* Animation */
+
+/* Initial hidden state */
+.left-header,
+.right-header {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+/* Slide directions */
+.left-header {
+  transform: translateX(-60px);
+}
+
+.right-header {
+  transform: translateX(60px);
+}
+
+/* Animate when scrolled */
+.headder_wrapper.animate .left-header,
+.headder_wrapper.animate .right-header {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Optional: stagger inner items */
+.headder_wrapper.animate .buttons-wrapper {
+  transition-delay: 0.3s;
+}
+
+.headder_wrapper.animate .feed_back_section {
+  transition-delay: 0.5s;
+}

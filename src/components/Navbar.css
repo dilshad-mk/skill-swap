@@ -4,6 +4,7 @@
   border-top: 1px solid rgba(185, 181, 181, 0.345);
   border-bottom: 1px solid rgba(185, 181, 181, 0.345);
   backdrop-filter: blur(6px);
+  background-color: #ffffffc8;
 }
 
 /* Logo */

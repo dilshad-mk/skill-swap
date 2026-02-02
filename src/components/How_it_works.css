@@ -1,8 +1,9 @@
 .wrapper{
-    padding: 100px 50px;
+    padding: 8% 10%;
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
+    gap: 40px;
     align-items: center;
 }
 a{
@@ -25,14 +26,17 @@ a{
     /* letter-spacing: 1px; */
     font-weight: 600;
     color: rgba(16, 16, 16, 0.747);
-    line-height: 40px;
+    /* line-height: 40px; */
+    margin-top: 20px;
 }
 .text_part h1{
     font-size: 35px;
     font-weight: bolder;
+    text-align: center;
 
 }
 .card_part_grid{
+    
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
@@ -100,4 +104,36 @@ display: flex;
 justify-content: center;
 align-items: center;
 color: white;
+font-weight: bold;
 }
+/* Animation */
+
+/* Initial state (before scroll) */
+.text_part,
+.cards {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Smooth animation */
+.text_part,
+.cards {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* When scroll reaches section */
+.wrapper.animate .text_part {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wrapper.animate .cards {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger card animation */
+.cards:nth-child(1) { transition-delay: 0.2s; }
+.cards:nth-child(2) { transition-delay: 0.4s; }
+.cards:nth-child(3) { transition-delay: 0.6s; }
+.cards:nth-child(4) { transition-delay: 0.8s; }
