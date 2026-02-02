@@ -162,7 +162,7 @@ padding: 40px 0px;
 @media (min-width:250px) and (max-width:511px) {
     .card_grid{
         padding: 20px 20px ;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
     }
     
