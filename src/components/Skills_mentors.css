@@ -153,6 +153,10 @@ padding: 40px 0px;
         background-color: #d7e4f7d0;
     }
 }
+.card:hover {
+  transition-delay: 0s !important;
+}
+
 
 /* responsivenes */
 @media (min-width:250px) and (max-width:511px) {
