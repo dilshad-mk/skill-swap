@@ -61,9 +61,9 @@ padding: 40px 0px;
     gap: 20px;
     overflow: hidden;
     cursor: pointer;
-    transition: all ease .25s;
+    transition: all ease .14s;
     &:hover{
-        transition: all .25s ease;
+        transition: all .14s ease;
         box-shadow: 1px 5px 10px rgba(103, 101, 101, 0.455);
     }
 }
@@ -129,10 +129,10 @@ padding: 40px 0px;
     padding: 5px 10px;
     border-radius: 8px;
     color: black;
-    transition: all ease .29s;
+    transition: all ease .14s;
 }
 .card:hover .rating button {
-    transition: all ease .29s;
+    transition: all ease .14s;
   background-color: #d7e4f7;
   color: #5838f5;
 }
