@@ -4,3 +4,7 @@ html {
 #how-it-works {
   scroll-margin-top: 80px; /* navbar height */
 }
+*{
+  padding-left: 0px;
+  padding-right: 0px;
+}

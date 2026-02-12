@@ -3,6 +3,8 @@ import Navbar from "../../components/Navbar";
 import Headder from '../../components/Headder';
 import How_it_works from '../../components/How_it_works';
 import Skills_mentors from '../../components/Skills_mentors';
+import Features from '../../components/Features';
+import Testimonial from '../../components/Testimonial';
 
 
 function Page1() {
@@ -13,7 +15,9 @@ function Page1() {
     level:"Expert",
     teaching:"Web Development",
     want_to_learn:"Spanish",
-    rating: 4.9
+    rating: 4.9,
+    message:"I learned Spanish from Maria while teaching her UI design. This platform changed my life! The connections you make are genuine and lasting."
+
   },
     {
     image:"images/James_Taylor.jpg", 
@@ -21,7 +25,8 @@ function Page1() {
     level:"Expert",
     teaching:"Public Speaking",
     want_to_learn:"Writing",
-    rating: 4.9
+    rating: 4.9,
+    message:"SkillSwap helped me learn guitar while sharing my coding skills. The community is incredibly supportive and talented."
   },
     {
     image:"images/Michael_Chen.jpg",  
@@ -29,7 +34,8 @@ function Page1() {
     level:"Intermediate",
     teaching:"Graphic Design",
     want_to_learn:"Photography",
-    rating: 4.8
+    rating: 4.8,
+    message:"I never thought I could learn video editing for free. Now I run my own production company thanks to the skills I gained here!"
   },
     {
     image:"images/Emma_Williams.jpg",  
@@ -62,6 +68,8 @@ function Page1() {
       <Headder />
       <How_it_works/>
       <Skills_mentors userData={users} />
+      <Features/>
+      <Testimonial userData={users}/>
 
     </>
   )

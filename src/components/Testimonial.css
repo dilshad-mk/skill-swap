@@ -1,0 +1,69 @@
+.testimonial-wrapper{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    overflow-y: hidden;
+    background: linear-gradient(
+  to bottom,
+  #fafcfc 0%,
+  #fcfcfc 50%,
+  #fefeff 100%
+);
+padding: 80px 0px;
+width: 100vw;
+
+}
+/* text part  */
+.text-part-testmonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-part-testmonial p:nth-child(1){
+    font-size: 12px;
+    background-color: #f2f6fa;
+    padding: 2px 5px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+.text-part-testmonial p:nth-child(3){
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(16, 16, 16, 0.747);
+    margin-top: 20px;
+}
+.text-part-testmonial h1{
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+.Card_grid {
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap:20px ;
+  overflow: hidden;
+  padding: 20px 70px ;
+ 
+}
+/* card layout styling */
+.testimonial-card{
+    padding: 20px ;
+    border: 1px solid rgba(150, 148, 148, 0.249);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all ease .14s;
+    &:hover{
+        transition: all .14s ease;
+        box-shadow: 1px 5px 10px rgba(103, 101, 101, 0.455);
+    }
+}

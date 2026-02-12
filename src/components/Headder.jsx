@@ -47,7 +47,7 @@ function Headder() {
 
         <div className="feed_back_section">
           <div className="feed_back">
-            <div className="rating">
+            <div className="rating-star">
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-md custom-navbar fixed-top">
@@ -27,9 +26,10 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="mainNavbar">
         <div className="navigation_part ms-auto">
           <ul className="navbar-nav align-items-lg-center gap-lg-4">
+
          <a href="#how-it-works">   <li className="nav-item">How It Works</li></a>
-            <a href=""><li className="nav-item">Features</li></a>
-           <a href=""> <li className="nav-item">Testimonial</li></a>
+            <a href="#Features"><li className="nav-item">Features</li></a>
+           <a href="#"> <li className="nav-item">Testimonial</li></a>
             <li className="nav-item login">Login</li>
             <li className="nav-item cta">Get Started</li>
           </ul>

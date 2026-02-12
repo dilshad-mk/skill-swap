@@ -92,7 +92,7 @@ h1 span {
     gap: 30px;
 }
 
-.rating {
+.rating-star {
     display: flex;
     gap: 3px;
 }
