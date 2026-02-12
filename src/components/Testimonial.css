@@ -11,8 +11,7 @@
   #fcfcfc 50%,
   #fefeff 100%
 );
-padding: 80px 0px;
-width: 100vw;
+ padding: 8% 10%;
 
 }
 /* text part  */
@@ -48,7 +47,7 @@ width: 100vw;
   grid-template-rows: auto;
   gap:20px ;
   overflow: hidden;
-  padding: 20px 70px ;
+  /* padding: 20px 70px ; */
  
 }
 /* card layout styling */
