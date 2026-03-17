@@ -1,10 +1,11 @@
 import  { useState } from 'react'
-import Navbar from "../../components/Navbar";
-import Headder from '../../components/Headder';
-import How_it_works from '../../components/How_it_works';
-import Skills_mentors from '../../components/Skills_mentors';
-import Features from '../../components/Features';
-import Testimonial from '../../components/Testimonial';
+import Navbar from "../components/Navbar";
+import Headder from '../components/Headder';
+import How_it_works from '../components/How_it_works';
+import Skills_mentors from '../components/Skills_mentors';
+import Features from '../components/Features';
+import Testimonial from '../components/Testimonial';
+import Footer from '../components/Footer';
 
 
 function Page1() {
@@ -70,6 +71,7 @@ function Page1() {
       <Skills_mentors userData={users} />
       <Features/>
       <Testimonial userData={users}/>
+      <Footer/>
 
     </>
   )

@@ -3,7 +3,7 @@ import "./Testimonial.css"
 
 function Testimonial({userData}) {
   return (
-    <div className='testimonial-wrapper' id='Testimonial'>
+    <div className='testimonial-wrapper' id='testimonials'>
        <div className="text-part-testmonial">
         <p>Success Stories</p>
         <h1>What Our Community Says</h1>
@@ -12,8 +12,7 @@ function Testimonial({userData}) {
        </div>
        {/* card_grid */}
        <div className='Card_grid'>
-  {userData &&
-    userData.slice(0, 3).map((user, index) => (
+  {userData.slice(0, 3).map((user, index) => (
       <div className="testimonial-card" key={index}>
        <div style={{display:"flex",gap:"4px"}}>
         <i class="bi bi-star-fill"></i>
@@ -23,8 +22,8 @@ function Testimonial({userData}) {
         <i class="bi bi-star-fill"></i>
        </div>
         <div><p style={{fontStyle:"italic",fontSize:"15px",fontWeight:"390"}}>"{user.message}"</p></div>
-        
-           <div style={{display:"flex",gap:"20px"}}>
+         {/* profile photo name part */}
+           <div style={{display:"flex",gap:"20px", justifyContent:"center", marginTop:"40px"}}>
 
              <div><img src={user.image} alt="" style={{ width: "48px"}} className='rounded-circle' /></div>
           

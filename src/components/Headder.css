@@ -105,7 +105,7 @@ h1 span {
 
 .rating_acc_profile_pic {
     display: grid;
-    grid-template-columns: repeat(4, 30px);
+    grid-template-columns: repeat(4, 40px);
 }
 
 .rating_para {

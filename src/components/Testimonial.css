@@ -13,6 +13,7 @@
 );
  padding: 8% 10%;
 
+
 }
 /* text part  */
 .text-part-testmonial{
@@ -33,6 +34,7 @@
     font-weight: 600;
     color: rgba(16, 16, 16, 0.747);
     margin-top: 20px;
+    text-align: center;
 }
 .text-part-testmonial h1{
     font-size: 35px;
@@ -47,7 +49,8 @@
   grid-template-rows: auto;
   gap:20px ;
   overflow: hidden;
-  /* padding: 20px 70px ; */
+  /* background-color: red; */
+  padding: 20px 70px ;
  
 }
 /* card layout styling */
@@ -57,12 +60,13 @@
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: start;
+    gap: 0px;
     overflow: hidden;
     cursor: pointer;
     transition: all ease .14s;
     &:hover{
         transition: all .14s ease;
-        box-shadow: 1px 5px 10px rgba(103, 101, 101, 0.455);
+        box-shadow: 1px 1px 10px rgba(103, 101, 101, 0.455);
     }
 }
