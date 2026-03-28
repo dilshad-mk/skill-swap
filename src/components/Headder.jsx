@@ -1,8 +1,16 @@
 import React, { useEffect, useRef } from 'react'
 import "./Headder.css"
+import { useNavigate } from 'react-router-dom'
 
 function Headder() {
   const headerRef = useRef(null)
+
+  // navigation  setup ------------------
+    const navigate = useNavigate();
+
+    const toSignup =()=>{
+      navigate("/signup")
+    }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,10 +47,10 @@ function Headder() {
         </p>
 
         <div className="buttons-wrapper">
-          <button>
+          <button onClick={toSignup}>
             Get Started Free <i className="bi bi-arrow-right"></i>
           </button>
-          <button>Browse Skills</button>
+          <button onClick={toSignup}>Browse Skills</button>
         </div>
 
         <div className="feed_back_section">

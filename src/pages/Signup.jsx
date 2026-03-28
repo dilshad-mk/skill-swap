@@ -65,7 +65,7 @@ function Signup() {
 
         // checks is email already exist?-------------
           try{
-            const checkUser = await axios.get(`https://skill-swap-api-1.onrender.com/users?email=${formData.email}`);
+            const checkUser = await axios.get(`https://skill-swap-api-h7rf.onrender.com/users?email=${formData.email}`);
              if(checkUser.data.length>0){
                 setError("Email already registerd!");
                 return;
@@ -74,16 +74,24 @@ function Signup() {
 
         // post form data to json server users -----------------------------
          
-            const res = await axios.post("https://skill-swap-api-1.onrender.com/users",{
+            const res = await axios.post("https://skill-swap-api-h7rf.onrender.com/users",{
                 name: formData.name,
                 email: formData.email,
                 password: formData.password
             });
+
+            // storing name and and email locally 
+              localStorage.setItem("signupData",JSON.stringify({
+                name: formData.name,
+                email : formData.email
+
+              }));
+            
              console.log("sign up successful");
              setError("");
               
             //  navigates to profile setup after signup seccesful
-                navigate('/Profile_setup')
+                navigate('/Login')
 }
          
          catch (err){
@@ -96,8 +104,8 @@ function Signup() {
 
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-[#faf7ff] px-4">
-
+        <div className="min-h-screen flex flex-col items-center justify-center bg-[#faf7ff] px-4">
+                 <div><img src="images/skill-swap-logo.png" alt="" className='w-52 bottom-6 relative' /></div>
             <div className="w-full max-w-[480px] bg-white/70 backdrop-blur-md rounded-2xl shadow-lg px-4 py-4">
 
                 {/* Title */}

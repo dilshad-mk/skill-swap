@@ -1,6 +1,15 @@
 import React from 'react'
 import "./Footer.css"
+import { useNavigate } from 'react-router-dom';
 function Footer() {
+
+  // navigation setup 
+  const navigate =useNavigate();
+
+  const toSignup =()=>{
+      navigate("/signup")
+    }
+
   return (
     <div className='footer-wrapper'>
          <div className="cta-section">
@@ -8,7 +17,7 @@ function Footer() {
             <p>
 Join thousands of people exchanging skills every day. No credit card required.</p>
 <div className="buttons_footer">
-    <button>Get Started Free <i class="bi bi-arrow-right"></i></button>
+    <button onClick={toSignup}>Get Started Free <i class="bi bi-arrow-right"></i></button>
     <button>Watch Demo</button>
 </div>
          </div>

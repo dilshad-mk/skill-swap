@@ -50,7 +50,7 @@
   gap:20px ;
   overflow: hidden;
   /* background-color: red; */
-  padding: 20px 70px ;
+  /* padding: 20px 70px ; */
  
 }
 /* card layout styling */
@@ -70,3 +70,9 @@
         box-shadow: 1px 1px 10px rgba(103, 101, 101, 0.455);
     }
 }
+
+
+/* responsive  */
+   @media (min-width : 280px) and (max-width : 400px){
+    
+   }

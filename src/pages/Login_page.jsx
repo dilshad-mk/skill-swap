@@ -17,7 +17,7 @@ function Login_page() {
         };
 
 //--------------------------------------------------------------- 
-   
+     
 // handlechange -------------------------------
 
   const handlechange = (e) => {
@@ -35,25 +35,61 @@ function Login_page() {
     };
     if(!formdata.email.endsWith("@gmail.com")){
       setError("Enter a valid email");
+      return;
     }
     setError("");
     console.log("Success:", formdata);
 
-      try{
-    const res = await axios.get(`https://skill-swap-api-1.onrender.com/users?email=${formdata.email}&password=${formdata.password}`);
-       
-    if(res.data.length>0){
-      console.log("login Success");
-         
-            navigate('/dashboard');
+try {
+  // 1. LOGIN CHECK
+  const res = await axios.get(
+    `https://skill-swap-api-h7rf.onrender.com/users?email=${formdata.email}&password=${formdata.password}`
+  );
 
-    }else{
-      setError("Invalid email or password")
-    }
-  }catch(err){
-    console.error(err);
-    setError("Login failed");
+  if (res.data.length > 0) {
+    console.log("Login Success");
+
+    // 2. CHECK USERDETAILS
+    const userDetailsRes = await axios.get(
+  `https://skill-swap-api-h7rf.onrender.com/users_details?email=${formdata.email}`
+);
+
+if (userDetailsRes.data.length > 0) {
+  const user = userDetailsRes.data[0];
+
+  // Check if profile is complete
+  if (user.userName && user.bio && user.learn && user.teach) {
+    localStorage.setItem("useremail", formdata.email);
+    navigate('/dashboard'); //  complete profile
+  } else {
+    navigate('/Profile_setup'); // ❗ incomplete profile
   }
+
+} else {
+  // user not exists → create
+  await axios.post(
+    `https://skill-swap-api-h7rf.onrender.com/users_details`,
+    {
+      email: formdata.email,
+      userName: "",
+      bio: "",
+      learn: [],
+      teach: [],
+      createdAt: new Date()
+    }
+  );
+
+  navigate('/Profile_setup');
+}
+
+  } else {
+    setError("Invalid email or password");
+  }
+
+} catch (err) {
+  console.error(err);
+  setError("Login failed");
+}
   };
 
 

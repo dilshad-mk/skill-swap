@@ -2,8 +2,15 @@ import React from 'react'
 import { useEffect, useRef } from 'react'
 
 import "./Skills_mentors.css"
+import { useNavigate } from 'react-router-dom'
 function Skills_mentors({userData}) {
+  
+  // navigation setup 
+  const navigate =useNavigate();
 
+  const toSignup =()=>{
+      navigate("/signup")
+    }
   
   /* 🔹 ADD */
   const sectionRef = useRef(null)
@@ -85,7 +92,7 @@ useEffect(() => {
         ))}
       </div>
 
-        <button className='brows-btn'>Browse All Skills <i className="bi bi-arrow-right ms-2"></i></button>
+        <button onClick={toSignup} className='brows-btn'>Browse All Skills <i className="bi bi-arrow-right ms-2"></i></button>
     </div>
   )
 }
