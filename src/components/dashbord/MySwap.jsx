@@ -150,6 +150,146 @@ renderOnCondition();
 
                       </div>
                     )}
+
+
+                    {/* send-------------------------------------------- */}
+
+                    {activeTab === "send" && (
+                      <div className='flex flex-col gap-3 mt-5'>
+
+                      
+                      <div className='  bg-white px-2 lg:!px-5 py-4 rounded-2xl flex justify-between items-center'>
+                               
+                                {/* left part  */}
+                            <div className='flex gap-3 justify-center items-center'>
+                             <div>
+                               
+                              <img src="/images/Sarah_Johnson.jpg" alt="" className='rounded-full w-10 relative bottom-2' />
+                             </div>
+
+                             <div>
+                                <p className='leading-0 text-[12px] font-semibold'>Sarah Jhon</p>
+                                <p className='leading-0 text-[12px]  text-black'>Learn : <span className='text-gray-800 font-light'>Web Development</span></p>
+                                <p className='leading-1 text-[10px] font-light'>2 hourse ago</p>
+                             </div>
+
+                            </div>
+
+                            {/* right part  */}
+                            <div>
+                              <p className='text-[12px] rounded-md bg-blue-50 px-2'>Pending</p>
+                            </div>
+
+                      </div>
+                      <div className='  bg-white px-2 lg:!px-5 py-4 rounded-2xl flex justify-between items-center'>
+                               
+                                {/* left part  */}
+                            <div className='flex gap-3 justify-center items-center'>
+                             <div className='rounded-full'>
+                               
+                              <img src="/images/Lisa_Anderson.jpg" alt="" className='rounded-full w-10 relative bottom-2' />
+                             </div>
+
+                             <div>
+                                <p className='leading-0 text-[12px] font-semibold'>Sarah Jhon</p>
+                                <p className='leading-0 text-[12px]  text-black'>Learn : <span className='text-gray-800 font-light'>Web Development</span></p>
+                                <p className='leading-1 text-[10px] font-light'>4 hourse ago</p>
+                             </div>
+
+                            </div>
+
+                            {/* right part  */}
+                            <div>
+                              <p className='text-[12px] rounded-md bg-purple-500 px-2 text-white'>Pending</p>
+                            </div>
+
+                      </div>
+                      <div className='  bg-white px-2 lg:!px-5 py-4 rounded-2xl flex justify-between items-center'>
+                               
+                                {/* left part  */}
+                            <div className='flex gap-3 justify-center items-center'>
+                             <div>
+                               
+                              <img src="/images/Emma_Williams.jpg" alt="" className='rounded-full w-10 relative bottom-2' />
+                             </div>
+
+                             <div>
+                                <p className='leading-0 text-[12px] font-semibold'>Emma Wiiliams</p>
+                                <p className='leading-0 text-[12px]  text-black'>Learn : <span className='text-gray-800 font-light'>Graphic Design</span></p>
+                                <p className='leading-1 text-[10px] font-light'>1 day ago</p>
+                             </div>
+
+                            </div>
+
+                            {/* right part  */}
+                            <div>
+                              <p className='text-[12px] rounded-md bg-red-500 px-2 text-white'>Declined</p>
+                            </div>
+
+                      </div>
+
+                      </div>
+                    )}
+
+
+                    {/* past ------------------------- */}
+                        {activeTab === "past" && (
+                          
+                          <div className='flex flex-col gap-3 mt-5'>
+
+                             <div className='  bg-white px-2 lg:!px-5 py-4 rounded-2xl flex justify-between items-center'>
+                               
+                                {/* left part  */}
+                            <div className='flex gap-3 justify-center items-center'>
+                             <div>
+                               
+                              <img src="/images/Emma_Williams.jpg" alt="" className='rounded-full w-10 relative bottom-2' />
+                             </div>
+
+                             <div>
+                                <p className='leading-0 text-[12px] font-semibold'>Emma Wiiliams</p>
+                                <p className='leading-0 text-[12px]  text-black'>Learn : <span className='text-gray-800 font-light'>Graphic Design</span></p>
+                                <p className='leading-1 text-[10px] font-light'>Jun 10 2025</p>
+                             </div>
+
+                            </div>
+
+                            {/* right part  */}
+                            <div>
+                              <p className='text-[12px] leading-0'>Your rating</p>
+                              <p className='text-[12px] leading-1'> <i className="text-yellow-400 fa-solid fa-star mx-1"></i>4</p>
+                            </div>
+
+                      </div>
+                             <div className='  bg-white px-2 lg:!px-5 py-4 rounded-2xl flex justify-between items-center'>
+                               
+                                {/* left part  */}
+                            <div className='flex gap-3 justify-center items-center'>
+                             <div>
+                               
+                              <img src="/images/Michael_Chen.jpg" alt="" className='rounded-full w-10 relative bottom-2' />
+                             </div>
+
+                             <div>
+                                <p className='leading-0 text-[12px] font-semibold'>Michael Chen</p>
+                                <p className='leading-0 text-[12px]  text-black'>Learn : <span className='text-gray-800 font-light'>Graphic Design</span></p>
+                                <p className='leading-1 text-[10px] font-light'>Aug 20 2025</p>
+                             </div>
+
+                            </div>
+
+                            {/* right part  */}
+                            <div>
+                              <p className='text-[12px] leading-0'>Your rating</p>
+                              <p className='text-[12px] leading-1'> <i className="text-yellow-400 fa-solid fa-star mx-1"></i>4.5</p>
+                            </div>
+
+                      </div>
+                          </div>
+                                
+                                                 
+                        )}
+                       
     </div>
   )
 }
