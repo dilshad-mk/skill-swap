@@ -6,34 +6,34 @@ function DashBordHome({userData}) {
   return (
     
       <div className='flex flex-col justify-center items-center w-full'>
-        <h1 className='!text-xl md:!text-2xl relative md:right-87 '>Welcome back, {userData?.name || "user"} 👋</h1>
-      <p className='relative md:right-80 text-sm'>Here's what's happening with your skill swaps today</p>
+        <h1 className='!text-xl md:!text-2xl relative '>Welcome back, {userData?.name } 👋</h1>
+      <p className='relative  text-sm'>Here's what's happening with your skill swaps today</p>
     
     {/* activities ------------------- */}
-      <div className='flex md:gap-5 gap-2 flex-wrap  w-full  justify-center items-center mt-3'>
+      <div className='flex xl:gap-5 gap-2 flex-wrap  w-full  justify-center items-center mt-3'>
 
-        <div className='flex gap-5  justify-between items-center bg-white md:w-[20%] py-2 px-2 md:px-3 w-[40%] rounded-2xl md:h-25 h-30 border hover:shadow-xl hover:translate-y-[-4px] duration-300 cursor-pointer'>
+        <div className='flex gap-5  justify-between items-center bg-white xl:w-[20%] py-2 px-2 md:px-3 w-[40%] rounded-2xl md:h-25 h-30 border hover:shadow-xl hover:translate-y-[-4px] duration-300 cursor-pointer'>
             <div><p className='md:text-[12px] text-[8.5px] text-gray-500'>Active Swaps</p>
                   <p className='font-bold'>8</p>
             </div>
             <div className='bg-blue-200 rounded-2xl w-10 h-10 rounded-2xl flex justify-center items-center'><i className="text-blue-600 fa-solid fa-user-group"></i></div>
         </div>
 
-        <div className='flex gap-5 justify-between items-center bg-white md:w-[20%] py-2 px-2 md:px-3 w-[40%] rounded-2xl md:h-25 h-30 border hover:shadow-xl hover:translate-y-[-4px] duration-300 cursor-pointer'>
+        <div className='flex gap-5 justify-between items-center bg-white xl:w-[20%] py-2 px-2 md:px-3 w-[40%] rounded-2xl md:h-25 h-30 border hover:shadow-xl hover:translate-y-[-4px] duration-300 cursor-pointer'>
             <div><p className='md:text-[12px] text-[8.5px] text-gray-500'>Completed</p>
                   <p className='font-bold'>24</p>
             </div>
             <div className='bg-green-200 rounded-2xl w-10 h-10 rounded-2xl flex justify-center items-center'><i className="text-green-600 fa-regular fa-circle-check"></i></div>
         </div>
 
-        <div className='flex gap-5 justify-between items-center bg-white md:w-[20%] py-2 px-2 md:px-3 w-[40%] rounded-2xl md:h-25 h-30 border hover:shadow-xl hover:translate-y-[-4px] duration-300 cursor-pointer'>
+        <div className='flex gap-5 justify-between items-center bg-white xl:w-[20%] py-2 px-2 md:px-3 w-[40%] rounded-2xl md:h-25 h-30 border hover:shadow-xl hover:translate-y-[-4px] duration-300 cursor-pointer'>
             <div><p className='md:text-[12px] text-[8.5px] text-gray-500'>Hours Learned</p>
                   <p className='font-bold'>127</p>
             </div>
             <div className='bg-purple-200 rounded-2xl w-10 h-10 rounded-2xl flex justify-center items-center'><i className="text-purple-600 fa-regular fa-clock"></i></div>
         </div>
 
-        <div className='flex gap-5 justify-between items-center bg-white md:w-[20%] py-2 px-2 md:px-3 w-[40%] rounded-2xl md:h-25 h-30 border hover:shadow-xl hover:translate-y-[-4px] duration-300 cursor-pointer'>
+        <div className='flex gap-5 justify-between items-center bg-white xl:w-[20%] py-2 px-2 md:px-3 w-[40%] rounded-2xl md:h-25 h-30 border hover:shadow-xl hover:translate-y-[-4px] duration-300 cursor-pointer'>
             <div><p className='md:text-[12px] text-[8.5px] text-gray-500'>Avg Rating</p>
                   <p className='font-bold'>4.9</p>
             </div>
@@ -44,9 +44,9 @@ function DashBordHome({userData}) {
 
 
       {/* upcomming sessions---------- */}
-            <div className='w-full md:flex  gap-4 relative md:left-27'>
+            <div className='xl:w-[82%] w-full xl:flex  gap-4 relative '>
               {/* left side ----------- */}
-              <div className='md:w-[58%]'>
+              <div className='xl:w-[65%]'>
                 {/* top ------------------------*/}
 
              <div className='bg-white mt-4 rounded-2xl border border-[black] flex flex-col gap-3 py-4'>
@@ -94,21 +94,22 @@ function DashBordHome({userData}) {
                     {/* left--div------------- */}
                       <div className='flex justify-center items-center gap-3'>
                           <div className='rounded-full w-10'> {/*image div  */}
-                               <img src="public\images\Sarah_Johnson.jpg" alt="" className='rounded-full '/>
+                               <img src="public\images\Michael_Chen.jpg" alt="" className='rounded-full '/>
                             </div>   
                             
                               
                             <div className='flex flex-col justify-center  relative top-1.5'> {/* name and skill div */} 
-                                <p className='md:text-[12px] text-[10px] font-bold leading-0 mt-1'>Sarah Jhonson</p>
-                                <p className='md:text-[12px] text-[10px] leading-1 mt-'>WebDevelopment</p>
+                                <p className='md:text-[12px] text-[10px] font-bold leading-0 mt-1'>Michael Chen</p>
+                                <p className='md:text-[12px] text-[10px] leading-1 mt-'>Graphic Design
+</p>
                             </div>
 
                       </div>
                         {/* right div  */}
                         <div className='flex gap-3 justify-center items-center '>
                                     <div className='relative top-1.5'> {/* time and session div     */}
-                                            <p className='md:text-[12px] text-[10px] leading-0 text-blue-800'>Today, 2:00 PM </p>
-                                            <p className='md:text-[12px] text-[10px] leading-1'> Video Call</p>
+                                            <p className='md:text-[12px] text-[10px] leading-0 text-blue-800'>Tommorrow, 10:00 AM </p>
+                                            <p className='md:text-[12px] text-[10px] leading-1'> Chat</p>
                                     </div>
 
                                     <div>{/* join btn div  */}
@@ -126,20 +127,20 @@ function DashBordHome({userData}) {
                     {/* left--div------------- */}
                       <div className='flex justify-center items-center gap-3'>
                           <div className='rounded-full w-10'> {/*image div  */}
-                               <img src="public\images\Sarah_Johnson.jpg" alt="" className='rounded-full '/>
+                               <img src="public\images\Emma_Williams.jpg" alt="" className='rounded-full '/>
                             </div>   
                             
                               
                             <div className='flex flex-col justify-center  relative top-1.5'> {/* name and skill div */} 
-                                <p className='md:text-[12px] text-[10px] font-bold leading-0 mt-1'>Sarah Jhonson</p>
-                                <p className='md:text-[12px] text-[10px] leading-1 mt-'>WebDevelopment</p>
+                                <p className='md:text-[12px] text-[10px] font-bold leading-0 mt-1'>Emma Williams</p>
+                                <p className='md:text-[12px] text-[10px] leading-1 mt-'>Content Writing</p>
                             </div>
 
                       </div>
                         {/* right div  */}
                         <div className='flex gap-3 justify-center items-center '>
                                     <div className='relative top-1.5'> {/* time and session div     */}
-                                            <p className='md:text-[12px] text-[10px] leading-0 text-blue-800'>Today, 2:00 PM </p>
+                                            <p className='md:text-[12px] text-[10px] leading-0 text-blue-800'>Friday, 3:00 PM </p>
                                             <p className='md:text-[12px] text-[10px] leading-1'> Video Call</p>
                                     </div>
 
@@ -175,7 +176,7 @@ function DashBordHome({userData}) {
                     {/* left--div------------- */}
                       <div className='flex justify-center items-center gap-3'>
                           <div className='rounded-full w-10'> {/*image div  */}
-                               <img src="public\images\Sarah_Johnson.jpg" alt="" className='rounded-full '/>
+                               <img src="public\images\David_Rodriguez.jpg" alt="" className='rounded-full '/>
                             </div>   
                             
                               
@@ -206,14 +207,14 @@ function DashBordHome({userData}) {
                     {/* left--div------------- */}
                       <div className='flex justify-center items-center gap-3'>
                           <div className='rounded-full w-10'> {/*image div  */}
-                               <img src="public\images\Sarah_Johnson.jpg" alt="" className='rounded-full '/>
+                               <img src="public\images\Lisa_Anderson.jpg" alt="" className='rounded-full '/>
                             </div>   
                             
                               
                             <div className='flex flex-col justify-center  relative top-1.5'> {/* name and skill div */} 
-                                <p className='md:text-[12px] text-[10px] font-bold leading-0 mt-1'>David Rodriguez</p>
-                                <p className='md:text-[12px] text-[10px] leading-3 mt-'>Wants to learn Digital Marketing</p>
-                                <p className='md:text-[10px] text-[#808080b6] text-[8px] leading-0 relative bottom-2'>2h ago</p>
+                                <p className='md:text-[12px] text-[10px] font-bold leading-0 mt-1'>Lisa Anderson</p>
+                                <p className='md:text-[12px] text-[10px] leading-3 mt-'>Wants to learn Photography</p>
+                                <p className='md:text-[10px] text-[#808080b6] text-[8px] leading-0 relative bottom-2'>5h ago</p>
                             </div>
 
                       </div>
@@ -236,14 +237,14 @@ function DashBordHome({userData}) {
                     {/* left--div------------- */}
                       <div className='flex justify-center items-center gap-3'>
                           <div className='rounded-full w-10'> {/*image div  */}
-                               <img src="public\images\Sarah_Johnson.jpg" alt="" className='rounded-full '/>
+                               <img src="public\images\James_Taylor.jpg" alt="" className='rounded-full '/>
                             </div>   
                             
                               
                             <div className='flex flex-col justify-center  relative top-1.5'> {/* name and skill div */} 
-                                <p className='md:text-[12px] text-[10px] font-bold leading-0 mt-1'>David Rodriguez</p>
-                                <p className='md:text-[12px] text-[10px] leading-3 mt-'>Wants to learn Digital Marketing</p>
-                                <p className='md:text-[10px] text-[#808080b6] text-[8px] leading-0 relative bottom-2'>2h ago</p>
+                                <p className='md:text-[12px] text-[10px] font-bold leading-0 mt-1'>James Taylor</p>
+                                <p className='md:text-[12px] text-[10px] leading-3 mt-'>Wants to learn Public Speaking</p>
+                                <p className='md:text-[10px] text-[#808080b6] text-[8px] leading-0 relative bottom-2'>1d ago</p>
                             </div>
 
                       </div>
@@ -269,7 +270,7 @@ function DashBordHome({userData}) {
               </div>
 
               {/* right side --- */}
-                <div className=''>
+                <div className='xl:w-[33%]'>
                   {/* top --------- */}
                   <div className='bg-white mt-4 rounded-2xl border border-[black] flex flex-col gap-3 py-4'>
                     
@@ -285,14 +286,14 @@ function DashBordHome({userData}) {
                                       <div className='flex gap-2 md:justify-between '>{/* top  */}
 
                                           <div className='rounded-full w-10 relative bottom-1.5'> {/* image div */}
-                                        <img src="public\images\Michael_Chen.jpg" alt="" className='rounded-full'/>
+                                        <img src="public\images\Emma_Williams.jpg" alt="" className='rounded-full'/>
                                     </div>
 
                                       <div className='flex flex-col gap-1 justify-center relative left-2 md:left-0'> {/* detail div */}
 
                                             <div className=''>
                                               <p className='text-[10px] md:text-[12px] !font-bold leading-0'>
-                                                Alex Thompson
+                                                Priya Sharma
                                               </p>
                                               <p className='text-[10px] md:text-[12px] !font-bold leading-0'><i className="text-yellow-500 fa-solid fa-star"></i> 4.9</p>
                                             </div>
@@ -308,7 +309,7 @@ function DashBordHome({userData}) {
                                       </div>
                                       
                                       <div>
-                                        <p className='bg-green-100 text-green-500 text-[12px] font-semibold px-2 rounded-md relative left-30 md:left-0'>95% Match</p>
+                                        <p className='bg-green-100 text-green-500 text-[12px] font-semibold px-2 rounded-md relative left-13 md:left-0'>95% Match</p>
                                       </div>
 
                                       </div>
@@ -323,7 +324,7 @@ function DashBordHome({userData}) {
                                       <div className='flex gap-2 md:justify-between '>{/* top  */}
 
                                           <div className='rounded-full w-10 relative bottom-1.5'> {/* image div */}
-                                        <img src="public\images\Michael_Chen.jpg" alt="" className='rounded-full'/>
+                                        <img src="public/images/feedbackimg4.jpg" alt="" className='rounded-full'/>
                                     </div>
 
                                       <div className='flex flex-col gap-1 justify-center relative left-2 md:left-0'> {/* detail div */}
@@ -332,21 +333,21 @@ function DashBordHome({userData}) {
                                               <p className='text-[10px] md:text-[12px] !font-bold leading-0'>
                                                 Alex Thompson
                                               </p>
-                                              <p className='text-[10px] md:text-[12px] !font-bold leading-0'><i className="text-yellow-500 fa-solid fa-star"></i> 4.9</p>
+                                              <p className='text-[10px] md:text-[12px] !font-bold leading-0'><i className="text-yellow-500 fa-solid fa-star"></i> 4.8</p>
                                             </div>
 
                                             <div>
                                               <p className='text-[10px] md:text-[12px] !font-bold leading-0 text-blue-500'>Teaches: <span className='text-[10px] md:text-[12px] !font-light
-                                               leading-0 text-black'>Spanish</span></p>
+                                               leading-0 text-black'>Guitar</span></p>
 
                                               <p className='text-[10px] md:text-[12px] !font-bold leading-0 text-purple-500'>Wants: <span className='text-[10px] md:text-[12px] !font-light
-                                               leading-0 text-black'>UI/UX Design</span></p>
+                                               leading-0 text-black'>Web Development</span></p>
                                             </div>
 
                                       </div>
                                       
                                       <div>
-                                        <p className='bg-green-100 text-green-500 text-[12px] font-semibold px-2 rounded-md relative left-30 md:left-0'>95% Match</p>
+                                        <p className='bg-green-100 text-green-500 text-[12px] font-semibold px-2 rounded-md relative left-13 md:left-0'>85% Match</p>
                                       </div>
 
                                       </div>
@@ -368,23 +369,23 @@ function DashBordHome({userData}) {
 
                                             <div className=''>
                                               <p className='text-[10px] md:text-[12px] !font-bold leading-0'>
-                                                Alex Thompson
+                                                Marcus Johnson
                                               </p>
                                               <p className='text-[10px] md:text-[12px] !font-bold leading-0'><i className="text-yellow-500 fa-solid fa-star"></i> 4.9</p>
                                             </div>
 
                                             <div>
                                               <p className='text-[10px] md:text-[12px] !font-bold leading-0 text-blue-500'>Teaches: <span className='text-[10px] md:text-[12px] !font-light
-                                               leading-0 text-black'>Spanish</span></p>
+                                               leading-0 text-black'>Photography</span></p>
 
                                               <p className='text-[10px] md:text-[12px] !font-bold leading-0 text-purple-500'>Wants: <span className='text-[10px] md:text-[12px] !font-light
-                                               leading-0 text-black'>UI/UX Design</span></p>
+                                               leading-0 text-black'>Video Editing</span></p>
                                             </div>
 
                                       </div>
                                       
                                       <div>
-                                        <p className='bg-green-100 text-green-500 text-[12px] font-semibold px-2 rounded-md relative left-30 md:left-0'>95% Match</p>
+                                        <p className='bg-green-100 text-green-500 text-[12px] font-semibold px-2 rounded-md relative left-13 md:left-0'>92% Match</p>
                                       </div>
 
                                       </div>
@@ -417,7 +418,7 @@ function DashBordHome({userData}) {
                   </div>
                 </div>
             </div>
-
+              
       </div>
  
   )
